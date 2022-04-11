@@ -1,0 +1,505 @@
+---
+title: Portfolio
+layout: base.njk
+---
+<!-- Introduction -->
+<section class="intro" id="home">
+  <div class="section__title__wrapper">
+    <h1 class="section__title section__title--intro">
+      Hello, I am <strong>Xavier K Muneku</strong>
+    </h1>
+  </div>
+
+  <p class="section__subtitle section__subtitle--intro">
+    UI/UX Designer & Web Developer
+  </p>
+  <img
+    src="./assets/images/image of xavier k muneku wearing a mask.webp"
+    alt="Image Xavier Kamwamba Muneku wearing a protective mask.webp"
+    class="intro__img"
+  />
+</section>
+
+<!-- My services -->
+<section class="my-services" id="services">
+  <h2 class="section__title section__title--services">What I do</h2>
+  <div class="services">
+    <div class="service">
+      <h3>Design + Development</h3>
+      <p>
+        In today's day and age, I know how fun and rewarding it is for any
+        individual or business to have a top-notch professional website. So
+        that's why I design and develop personalised unique websites from
+        scratch with a focus on the client's preferences and requirements.
+      </p>
+    </div>
+    <!-- / Service -->
+
+    <div class="service">
+      <h3>E-Commerce</h3>
+      <p>
+        I think the E-Commerce sphere is a very lucrative part of web
+        development for developers because of the high demand. Many businesses
+        especially small ones want to take things to the next level by owning a
+        website, this is in order for them to extend their out reach to a vast
+        range of customers.
+      </p>
+    </div>
+    <!-- / Service -->
+
+    <div class="service">
+      <h3>WordPress</h3>
+      <p>
+        Of course, everyone has their own preferences but with WordPress and
+        similar software like Wix, Shopify, and Squarespace I'm offered the
+        opportunity to choose from a ton of already made template themes to
+        build and deliver fast-tracked quality websites in no time.
+      </p>
+    </div>
+    <!-- / Service -->
+  </div>
+  <!-- / Services -->
+
+  <a href="#work" class="btn">My work</a>
+</section>
+<!--I am  a positive, enthusiastic and competent Web Developer who over the years, has built up a diverse range of skills, qualities and attributes that guarantee i will perform highly in a web developer role-->
+<!-- About me -->
+<section class="about-me" id="about">
+  <h2 class="section__title section__title--about">Who I am</h2>
+  <p class="section__subtitle section__subtitle--about">
+    Designer & developer based out of Oran, Algeria
+  </p>
+  <div class="about-me__body">
+    <p>
+      I'm totally filled with enthusiasm when it comes to UI/UX Designs and Web
+      Development. Over the past 5 years, I've bombarded myself with all sorts
+      kinds of tech that involves the design and development of websites in
+      order for me to not only diversify my skills and qualities but also build
+      my competence in this field of work.
+    </p>
+    <p>
+      All that I know about websites is not self taught this is because I am a
+      holder of a Bachelors of Computer Science (BCS) degree, I obtained my
+      degree at the University of Sciences and Technology Oran - Mohamed Boudiaf
+      (USTOMB), Algeria.
+    </p>
+    <p>
+      Therefore, if you're interested in knowing more about me you can download
+      my curriculum vitae (CV) below.
+    </p>
+  </div>
+  <div class="about-me__btn">
+    <a
+      href="./assets/documents/Xavier K Muneku's CV.pdf"
+      target="_blank"
+      class="btn"
+      >Download CV</a
+    >
+  </div>
+
+  <img
+    src="./assets/images/image of xavier k muneku smiling.webp"
+    alt="Image of Xavier K Muneku smiling"
+    class="about-me__img"
+  />
+</section>
+
+<!-- My work -->
+<section class="my-work" id="work">
+  <h2 class="section__title section__title--work">My work</h2>
+  <p class="section__subtitle section__subtitle--work">
+    Here is a select range of my recent work, click on any of the images below to 
+    visit the site!
+  </p>
+
+  <div class="portfolio">
+    {%- for post in collections.portfolioItems | reverse -%} {% include
+        'portfolio-item.njk' %} {%- endfor -%}
+  </div>
+</section>
+
+<!-- skills -->
+<section class="skills" id="skill">
+  <div><h2 class="section__title section__title--about">Skills</h2></div>
+
+  <div>
+    <p class="section__subtitle section__subtitle--skill">
+      Skills reflect our knowledge, below is a list of programming languages and
+      tools I am familiar with.
+    </p>
+  </div>
+
+  <div>
+    <p class="section__subtitle section__subtitle--container--skills">
+      Programming languages
+    </p>
+    <div class="container--skills">
+      <div class="card--skill">
+        <div>
+          <div class="outter-circle">
+            <div class="inner-circle">
+              <div id="number">95%</div>
+            </div>
+          </div>
+          <!--svg circle-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="100px"
+            height="100px"
+          >
+            <defs>
+              <linearGradient id="GradientColor">
+                <stop offset="0%" stop-color="#ffd700" />
+                <stop offset="100%" stop-color="#0c0c0c" />
+              </linearGradient>
+            </defs>
+            <circle
+              class="circle-1"
+              cx="50"
+              cy="50"
+              r="45"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+        <div><p>HTML</p></div>
+      </div>
+
+      <div class="card--skill">
+        <div class="outter-circle">
+          <div class="inner-circle">
+            <div id="number">80%</div>
+          </div>
+          <!--svg circle-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="100px"
+            height="100px"
+          >
+            <defs>
+              <linearGradient id="GradientColor">
+                <stop offset="0%" stop-color="#ffd700" />
+                <stop offset="100%" stop-color="#0c0c0c" />
+              </linearGradient>
+            </defs>
+            <circle
+              class="circle-2"
+              cx="50"
+              cy="50"
+              r="45"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+        <div><p>CSS/SASS</p></div>
+      </div>
+
+      <div class="card--skill">
+        <div class="outter-circle">
+          <div class="inner-circle">
+            <div id="number">45%</div>
+          </div>
+          <!--svg circle-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="100px"
+            height="100px"
+          >
+            <defs>
+              <linearGradient id="GradientColor">
+                <stop offset="0%" stop-color="#ffd700" />
+                <stop offset="100%" stop-color="#0c0c0c" />
+              </linearGradient>
+            </defs>
+            <circle
+              class="circle-3"
+              cx="50"
+              cy="50"
+              r="45"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+        <div><p>PHP</p></div>
+      </div>
+
+      <div class="card--skill">
+        <div class="outter-circle">
+          <div class="inner-circle">
+            <div id="number">65%</div>
+          </div>
+          <!--svg circle-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="100px"
+            height="100px"
+          >
+            <defs>
+              <linearGradient id="GradientColor">
+                <stop offset="0%" stop-color="#ffd700" />
+                <stop offset="100%" stop-color="#0c0c0c" />
+              </linearGradient>
+            </defs>
+            <circle
+              class="circle-4"
+              cx="50"
+              cy="50"
+              r="45"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+        <div><p>JavaScript</p></div>
+      </div>
+
+      <div class="card--skill">
+        <div class="outter-circle">
+          <div class="inner-circle">
+            <div id="number">88%</div>
+          </div>
+          <!--svg circle-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="100px"
+            height="100px"
+          >
+            <defs>
+              <linearGradient id="GradientColor">
+                <stop offset="0%" stop-color="#ffd700" />
+                <stop offset="100%" stop-color="#0c0c0c" />
+              </linearGradient>
+            </defs>
+            <circle
+              class="circle-5"
+              cx="50"
+              cy="50"
+              r="45"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+        <div><p>Nunjucks</p></div>
+      </div>
+
+      <div class="card--skill">
+        <div class="outter-circle">
+          <div class="inner-circle">
+            <div id="number">40%</div>
+          </div>
+          <!--svg circle-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="100px"
+            height="100px"
+          >
+            <defs>
+              <linearGradient id="GradientColor">
+                <stop offset="0%" stop-color="#ffd700" />
+                <stop offset="100%" stop-color="#0c0c0c" />
+              </linearGradient>
+            </defs>
+            <circle
+              class="circle-6"
+              cx="50"
+              cy="50"
+              r="45"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+        <div><p>SQL</p></div>
+      </div>
+
+      <div class="card--skill">
+        <div class="outter-circle">
+          <div class="inner-circle">
+            <div id="number">50%</div>
+          </div>
+          <!--svg circle-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="100px"
+            height="100px"
+          >
+            <defs>
+              <linearGradient id="GradientColor">
+                <stop offset="0%" stop-color="#ffd700" />
+                <stop offset="100%" stop-color="#0c0c0c" />
+              </linearGradient>
+            </defs>
+            <circle
+              class="circle-7"
+              cx="50"
+              cy="50"
+              r="45"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+        <div><p>React</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <p class="section__subtitle section__subtitle--container--skills">Tools</p>
+    <div class="container--skills">
+      <div class="card--skill">
+        <div class="outter-circle">
+          <div class="inner-circle">
+            <div id="number">90%</div>
+          </div>
+          <!--svg circle-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="100px"
+            height="100px"
+          >
+            <defs>
+              <linearGradient id="GradientColor">
+                <stop offset="0%" stop-color="#ffd700" />
+                <stop offset="100%" stop-color="#0c0c0c" />
+              </linearGradient>
+            </defs>
+            <circle
+              class="circle-11"
+              cx="50"
+              cy="50"
+              r="45"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+        <div><p>Balsamiq</p></div>
+      </div>
+
+      <div class="card--skill">
+        <div class="outter-circle">
+          <div class="inner-circle">
+            <div id="number">70%</div>
+          </div>
+          <!--svg circle-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="100px"
+            height="100px"
+          >
+            <defs>
+              <linearGradient id="GradientColor">
+                <stop offset="0%" stop-color="#ffd700" />
+                <stop offset="100%" stop-color="#0c0c0c" />
+              </linearGradient>
+            </defs>
+            <circle
+              class="circle-12"
+              cx="50"
+              cy="50"
+              r="45"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+        <div><p>Figma</p></div>
+      </div>
+
+      <div class="card--skill">
+        <div class="outter-circle">
+          <div class="inner-circle">
+            <div id="number">90%</div>
+          </div>
+          <!--svg circle-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="100px"
+            height="100px"
+          >
+            <defs>
+              <linearGradient id="GradientColor">
+                <stop offset="0%" stop-color="#ffd700" />
+                <stop offset="100%" stop-color="#0c0c0c" />
+              </linearGradient>
+            </defs>
+            <circle
+              class="circle-13"
+              cx="50"
+              cy="50"
+              r="45"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+        <div><p>Photoshop</p></div>
+      </div>
+
+      <div class="card--skill">
+        <div class="outter-circle">
+          <div class="inner-circle">
+            <div id="number">85%</div>
+          </div>
+          <!--svg circle-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="100px"
+            height="100px"
+          >
+            <defs>
+              <linearGradient id="GradientColor">
+                <stop offset="0%" stop-color="#ffd700" />
+                <stop offset="100%" stop-color="#0c0c0c" />
+              </linearGradient>
+            </defs>
+            <circle
+              class="circle-14"
+              cx="50"
+              cy="50"
+              r="45"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+        <div><p>Git | GitHub</p></div>
+      </div>
+
+      <div class="card--skill">
+        <div class="outter-circle">
+          <div class="inner-circle">
+            <div id="number">60%</div>
+          </div>
+          <!--svg circle-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="100px"
+            height="100px"
+          >
+            <defs>
+              <linearGradient id="GradientColor">
+                <stop offset="0%" stop-color="#ffd700" />
+                <stop offset="100%" stop-color="#0c0c0c" />
+              </linearGradient>
+            </defs>
+            <circle
+              class="circle-15"
+              cx="50"
+              cy="50"
+              r="45"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+        <div><p>Adobe XD</p></div>
+      </div>
+    </div>
+  </div>
+</section>

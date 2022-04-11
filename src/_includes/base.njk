@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Portfolio" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Xavier K Muneku" />
+
+    <!-- Content to fit all screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Normalize all css for all the different browsers -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjd.cloudflae.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+
+    <!-- Fontawesome link -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      crossorigin="anonymous"
+    />
+
+    <!-- Css link -->
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <link
+      rel="shortcut icon"
+      href="/assets/images/logo-portfolio.ico"
+      type="image/x-icon"
+    />
+    
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <!-- title of document -->
+    <title>devXavier - {{ title }}</title>
+  </head>
+  <body>
+    {% include 'header.njk' %} 
+    {{ content | safe }} 
+    {% include 'footer.njk' %}
+  </body>
+  <script src="/script/nav-toggle.js"></script>
+  <script src="/script/current-year-script.js"></script>
+</html>

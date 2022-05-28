@@ -497,6 +497,8 @@ h3 {
   flex-wrap: wrap;
   justify-content: center;
   padding: 1rem 0 0;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .portfolio__item {

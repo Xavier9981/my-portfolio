@@ -1,6 +1,6 @@
 ---
 title: Prowfit Valley
-link: www.prowfitvalley.com
+link: https://www.prowfitvalley.com/
 image: /assets/images/uploads/prowfit-valley.png
 imageAlt: Prowfit Valley
 tags:
